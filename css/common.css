@@ -1,0 +1,272 @@
+/* 版心 */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/**
+
+-------------------------快捷导航-------------------------
+
+*/
+
+/* 快捷导航颜色和高度 */
+.shortcut{
+    height: 52px;
+    background-color: rgb(51, 51, 51);
+}
+/* 将快捷菜单向右靠齐 */
+.shortcut .wrapper ul{
+    float: right;
+}
+/* 将竖直列表变水平 */
+.shortcut .wrapper li{
+    float: left;
+    line-height: 52px;
+}
+/* 改变菜单的字体，颜色，距离，以及边框 */
+.shortcut .wrapper a{
+    font-size: 14px;
+    color: #dcdcdc;
+    padding: 0 16px;
+    border-right: 1px solid #666666;
+}
+/* 给特定菜单加icon */
+.shortcut .wrapper a span{
+    display: inline-block;
+    width: 11px;
+    height: 18px;
+    margin-right: 8px;
+    /* icon用背景图的方式显示 */
+    background-image: url(../images/sprites.png);
+    /* icon在其所在大图里面的位置 */
+    background-position: -160px -70px;
+    /* 让icon居中显示 */
+    vertical-align: middle;
+}
+/* 去掉最后一个菜单的边框 */
+.shortcut .wrapper li:last-child a{
+    border: 0;
+}
+
+
+
+/**
+
+-------------------------导航菜单------------------------------
+
+*/
+/* 图片最高，就按照图片的高度70来定height，margin也是根据图片来 */
+
+.header {
+    margin: 30px auto;
+    height: 70px;
+    /* background-color: aquamarine; */
+}
+/* 设置4个div的宽度高度背景色，上下左右边距以及是否需要float */
+.logo{
+    height: 70px;
+    width: 207px;
+    float: left;
+}
+.nav{
+    float: left;
+    height: 70px;
+    margin-left: 27px;
+}
+.search{
+    position: relative;
+    margin-top: 20px;
+    height: 30px;
+    width: 172px;
+    margin-left: 38px;;
+    float: left;
+    border-bottom: 2px solid #e7e7e7;
+}
+.trolly{
+    position: relative;
+    height: 23px;
+    width: 23px;
+    margin-left: 15px;
+    margin-top: 25px;
+    float: left;
+    background-image: url(../images/sprites.png);
+    background-position: -121px -70px;
+}
+
+/* ------------------逐个设置每个div里面的细节 -----------------*/
+
+/* ------------logo---------- */
+
+/* 优化搜索引擎做法 */
+.logo h1{
+    height: 70px;
+    width: 207px;
+}
+
+.logo h1 a{
+    display: block;
+    height: 70px;
+    width: 207px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+/* ------------nav---------- */
+
+.nav li{
+    float: left;
+    line-height: 70px;
+}
+
+.nav li a{
+    margin-left: 21px;
+    padding: 7px 0;
+}
+.nav li a:hover{
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+/* ------------search---------- */
+
+.search input{
+    margin-left: 31px;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.search span{
+    position: absolute;
+    left: 2px;
+    top: 4px;
+    display: block;
+    height: 18px;
+    width: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -79px -70px;  
+}
+
+/* ------------trolly---------- */
+.trolly span{
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 15px;
+    text-align: center;
+}
+/**
+
+-------------------------footer------------------------------
+
+*/
+
+.footer{
+    
+    height: 342px;
+    background-color: #333333;
+}
+
+.footer .top {
+    
+    height: 177px;
+    width: 1240px;
+    color: #dcdcdc;
+    
+    border-bottom: 3px solid #434343;
+}
+.footer .top li{
+    position: relative;
+    float: left;
+    height: 58px;
+    margin-top: 61px;
+}
+.footer .top li a {
+   
+    color: #dcdcdc;
+    margin: auto 170px;
+    float: left;
+    line-height: 58px;
+    
+ }
+
+
+ /* 
+ -------方法1： 用::before来显示图片 -----
+ */
+
+ .footer .top li::before {
+    position: absolute;
+    left: 100px;
+    top: 0;
+    /* display: inline-block; */
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    vertical-align: middle;
+}
+.footer .top li:nth-child(2):before {
+    position: absolute;
+    left: 100px;
+    top: 0;
+    /* display: inline-block; */
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: -66px 0;
+    vertical-align: middle;
+}
+/* 
+ -------方法2： 用span来显示图片 -----
+ */
+/* 
+ #span1{
+    display: inline-block;
+    height: 58px;
+    width: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 0;
+    vertical-align: middle;
+    
+ }
+ #span2{
+    display: inline-block;
+    height: 58px;
+    width: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: -66px 0;
+    vertical-align: middle;
+    
+ }
+ #span3{
+    display: inline-block;
+    height: 58px;
+    width: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: -130px 0;
+    vertical-align: middle;   
+ } */
+
+ .bottom {
+    width: 537px;
+    height: 48px;
+    margin: 40px auto;
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+ }
+
+ .bottom a{
+    color: #999999;
+    font-size: 14px;
+ }
+
+ 

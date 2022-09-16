@@ -1,0 +1,241 @@
+/* 放index页面的样式表 */
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+}
+.banner li img{
+    height: 500px;
+    width: 1240px ;
+    
+}
+.banner .aside{
+    position:absolute;
+    top: 0;
+    width:251px;
+    height: 500px;
+    background-color: #000000;
+	opacity: 0.8;
+    line-height: 50px;
+    
+}
+
+.banner span{
+    float: right;
+    padding-right: 20px;
+}
+.banner .aside li a{
+    padding-left: 30px;
+    font-size: 14px;
+    color: #ffffff;
+    
+    
+}
+.banner ul li:hover{
+    background-color: #27ba9b;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 228px;
+    width: 45px;
+	height: 44px;
+	background-color: #000000;
+	opacity: 0.2;
+    border-radius: 50%;
+}
+.prev {
+    left: 260px;
+    background-image: url(../images/sprites.png);
+    background-position: 15px -60px;
+}
+.next {
+    right: 12px;
+    background-image: url(../images/sprites.png);
+    background-position: -24px -60px ;
+}
+
+.banner ol{
+    position: absolute;
+    top: 459px;
+    left: 570px;
+    width: 100px;
+    height: 10px;
+}
+.banner ol li{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255, 0.43);
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.banner ol .current{
+    background-color: #fff;
+}
+
+/* 
+
+-------------------Goods-----------------------
+
+ */
+.goods .hd{
+    height: 114px;
+    line-height: 114px;
+    
+}
+ .goods .hd h2{
+    font-size: 29px;
+    color: #333333;
+    float: left;
+    font-weight: normal;
+    height: 114px;
+ }
+ .goods .hd h2 span{
+    font-size: 16px;
+    color: #999999;
+    padding-left: 30px;
+    font-weight: normal;
+ }
+ .goods .hd a{
+    float: right;
+    color: #999999;
+    margin-right: 30px ;
+ }
+ .goods .hd a::after,
+ .fresh .hd .more::after{
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    content: '';
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    margin-left: 13px;
+    vertical-align: middle;
+ }
+ .goods .bd ul li{
+    position: relative;
+    width: 304px;
+    height: 405px;
+   
+    float: left;
+    margin-right: 8px;
+    text-align: center;
+ }
+
+ .goods .bd ul li:last-child{
+    margin-right: 0px;
+ }
+
+ .goods .bd ul li img{
+    width: 304px;
+ }
+
+ .goods .bd ul li h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+	font-weight: normal;
+ }
+ .goods .bd ul li div{
+    color: #9a2e1f;
+    font-size: 17px;
+ }
+ .goods .bd ul li span{
+    font-size: 23px;
+ }
+
+ .goods .bd ul li b{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 28px;
+    height: 51px;
+    font-size: 18px;
+    color: #27ba9b;
+    border: 1px solid #27ba9b;
+    border-radius: 2px;
+    line-height: 24px;
+ }
+
+/* 
+
+-------------------Fresh-----------------------
+
+ */ 
+
+.fresh .hd{
+    height: 114px;
+    line-height: 114px;
+}
+.fresh .hd h2{
+    float: left;
+    font-size: 29px;
+	font-weight: normal;
+}
+.fresh .hd .more{
+    float: right;
+    color: #999999;
+    padding-right: 30px;
+}
+
+.fresh .hd ul{
+    float: right;
+    margin-right: 40px;
+    
+}
+
+.fresh .hd ul li {
+   
+    float: left;
+    margin-right: 10px;
+}
+.fresh .hd ul li a {
+    padding: 2px 7px;
+    width: 46px;
+	height: 20px;
+}
+
+.fresh .hd ul li a:hover, 
+.fresh .hd ul li .current{
+    background-color: #27ba9b;
+    color: #fefbfc;
+}
+   
+.fresh .bd .left{
+    width: 240px;
+	height: 617px;
+    float: left;
+}
+.fresh .bd .right{
+    width: 1000px;
+   height: 610px;
+    float: right;
+    
+}
+.fresh .bd .right ul{
+    margin-left: 20px;
+}
+.fresh .bd .right ul li{
+    width: 205px;
+	height: 292px;
+    float: left;
+    margin: 10px 20px;
+}
+.fresh .bd .right img{
+    width: 184px;
+	
+}
+.fresh .bd .right h3{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+}
+.fresh .bd .right li div{
+    color: #9a2e1f;
+    text-align: left;
+}
